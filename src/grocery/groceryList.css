@@ -1,0 +1,12 @@
+.listContainer{
+    display : grid;
+    width : 34%;
+    margin : auto;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.groceryBtn{
+    height: 25px;
+    margin-top: 24px;
+}
+

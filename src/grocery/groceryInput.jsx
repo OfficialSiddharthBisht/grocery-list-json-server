@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./groceryInput.css"
 function GroceryInput({getGrocery}){
     
     const [input, setInput] = React.useState("");
@@ -19,10 +19,9 @@ function GroceryInput({getGrocery}){
 }
     return(
         <div style={{textAlign :"center"}}>
-            <input
-                style={{height : "25px"}}
-                type= "text"
-                value={input}
+            <input className='groceryInputContainer'
+            type= "text"
+            value={input}
                 onChange = {(event) =>(setInput(event.target.value))}
             />
             <button
